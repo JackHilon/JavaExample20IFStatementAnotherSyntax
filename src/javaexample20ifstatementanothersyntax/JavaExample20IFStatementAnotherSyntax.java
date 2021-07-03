@@ -18,9 +18,16 @@ public class JavaExample20IFStatementAnotherSyntax {
 
         int doubleMax = FindDoubleMax(a, b);
         System.out.println("The double max(" + a + " , " + b + ") is: " + doubleMax);
-        
-        in.close(); 
 
+        String str = NumberIsEven(max);
+        System.out.println("The max(" + max + ") is an " + str + " number.");
+        in.close();
+
+    }
+
+    private static String NumberIsEven(int number) {
+        String res = (number % 2 == 0) ? "even" : "odd";
+        return res;
     }
 
     private static int FindDoubleMax(int num1, int num2) {
